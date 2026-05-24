@@ -1,6 +1,5 @@
 import java.util.ArrayList;
 import java.util.Scanner;
-import java.util.Timer;
 
 public class Main {
     static ArrayList<String> allCourses = new ArrayList<>();
@@ -27,10 +26,9 @@ public class Main {
 
     static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        Timer timer = new Timer();
-        TimeOutTask timeOutTask = new TimeOutTask();
+        TimeOut timeOut = new TimeOut();
 
-        timer.schedule(timeOutTask, 10000);
+        timeOut.start();
 
         System.out.println("온라인 강의 시스템입니다.");
 
