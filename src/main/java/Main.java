@@ -183,6 +183,11 @@ public class Main {
             else if (service == 2) {
                 System.out.println("서비스를 종료합니다.");
                 System.out.println("이용해주셔서 감사합니다.");
+
+                if (timeOut.isAlive()) {
+                    System.exit(0);
+                }
+
                 break;
             }
 
