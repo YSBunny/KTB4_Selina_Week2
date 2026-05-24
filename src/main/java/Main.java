@@ -26,6 +26,9 @@ public class Main {
 
     static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+        TimeOut timeOut = new TimeOut();
+
+        timeOut.start();
 
         System.out.println("온라인 강의 시스템입니다.");
 
